@@ -46,3 +46,6 @@ def probando_template3(request):
     numero_random = randint(1, 10)
     contexto = {"numero_random": numero_random}
     return render(request, "template3.html", context=contexto)
+
+def index(request):
+    return render(request, "index.html")
